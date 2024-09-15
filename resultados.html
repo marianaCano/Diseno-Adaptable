@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=0.75, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <link rel="stylesheet" href="css\main.css">
+    <link rel="stylesheet" href="css/main_Tablet.css" media="screen and (min-width: 700px)">
+    <link rel="stylesheet" href="css/main_Computador.css" media="screen and (min-width: 1000px)">
+    <script type="text/javascript" src="js/main.js"></script>
+    <title>Resultados</title>
+</head>
+<body>
+    <div id="home">
+
+
+  <div class="aling_in_line">
+
+    <p>
+        <input type="search" name="busqueda" placeholder="Marios Mendoza" class="busqueda_resultados">
+
+
+    </p>
+    <a  href="home.html">     <input type="button"class="icons8-cerrar" > </a>
+
+  </div>
+
+
+            <div class="filtros">
+                <div class="filtro">
+                       Califación
+                </div>
+                <div class="filtro">
+                    Estado
+               </div>
+                <div class="filtro">
+                     Precio
+               </div>
+            </div>
+
+            <br>
+
+            <br>
+            <div class="grid_productos">
+                    <a  href="pantallaproducto.html"> <input type="button" class="boton_producto" id="producto7" onclick="seleccionarProducto(6)">  </a>
+                    <a  href="pantallaproducto.html"> <input type="button" class="boton_producto" id="producto8" onclick="seleccionarProducto(7)" >   </a>
+                    <a  href="pantallaproducto.html"> <input type="button" class="boton_producto" id="producto9"  onclick="seleccionarProducto(8)"> </a>
+                    <a  href="pantallaproducto.html"> <input type="button" class="boton_producto" id="producto10"  onclick="seleccionarProducto(9)">   </a>
+                    <a  href="pantallaproducto.html"> <input type="button" class="boton_producto" id="producto11" onclick="seleccionarProducto(10)">  </a>
+                    <a  href="pantallaproducto.html"> <input type="button" class="boton_producto"  id= "producto12" onclick="seleccionarProducto(11)">   </a>
+            </div>
+
+       </div>
+
+       <div class="menu">
+
+         <div class="menu_bar">
+           <a href="home.html"> <input type="button" class="icons8-home"></a>
+           <a href="pantallacompras.html"> <input type="button" class="icons8-compras"></a>
+           <a href="pantallaventas.html"> <input type="button" class="icons8-ventas"></a>
+           <a href="favoritos.html"> <input type="button" class="icons8-favoritos"></a>
+           <a href="perfil.html"> <input type="button" class="icons8-perfil"></a>
+
+         </div>
+           </div>
+
+
+</html>
+<script type="text/javascript">
+let button = document.querySelector('#button');
+let msg = document.querySelector('#message');
+
+button.addEventListener('click', ()=>{
+  msg.classList.toggle('reveal');
+})
+
+</script>

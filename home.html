@@ -1,29 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Document</title>
-</head>
-<body>
-    <img  src="https://png.pngtree.com/png-clipart/20190604/original/pngtree-business-logo-design-png-image_915991.jpg"
-    alt="Solvetic" width="100" height="100" >
-    <img src="" alt="icono menu" width="50" height="50">
-    <img src="" alt="icono notificaciones" width="50" height="50">
-    <img src="" alt="icono de compras" width="50" height="50">
-    
-<form action="../../form-result.php" method="post" target="_blank">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=0.73, maximum-scale=1.0, user-scalable=no" name="viewport" />
+  <link rel="stylesheet" href="css\main.css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <link rel="stylesheet" href="css/main_Tablet.css" media="screen and (min-width: 700px)">
+  <link rel="stylesheet" href="css/main_Computador.css" media="screen and (min-width: 1000px)">
+  <title>Home</title>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+
+<div class="menu_arriba">
+  <img src="https://i.ibb.co/WG8YP7M/Alerce-1.png" alt="Solvetic" class="btn_home" id="logo">
+  <p class="espacio_blanco"></p>
+  <a href="home.html"> <input type="button" class="icons8-home"></a>
+  <a href="pantallacompras.html"> <input type="button" class="icons8-compras"></a>
+  <a href="pantallaventas.html"> <input type="button" class="icons8-ventas"></a>
+  <a href="favoritos.html"> <input type="button" class="icons8-favoritos"></a>
+  <a href="perfil.html"> <input type="button" class="icons8-perfil"></a>
+  <a href="resultados.html"> <input type="search" name="busqueda" placeholder="Buscar" class="busqueda_home "> </a>
+  <a href="pantallacarrito.html"> <input type="button" class="icons8-notificacion"> </a>
+  <a href="pantallacarrito.html"> <input type="button" class="icons8-carrito"> </a>
+</div>
+
+
+
+
+  <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" />
+  <label for="abrir-cerrar">
+    &#9776; <span class="abrir"></span>
+  </label>
+
+  <div id="sidebar" class="sidebar">
+    <ul class="menu2">
+      <li><a href="home.html"> Mi perfil</a> </li>
+      <li><a href="pantallacompras.html"> Mis compras</a> </li>
+      <li><a href="pantallaventas.html"> Mis ventas</a> </li>
+      <li><a href="favoritos.html"> Mis favoritos</a> </li>
+    </ul>
+  </div>
+
+  <div id="home">
+
+    <div class="home_bar menu_ocultar">
+      <img src="https://i.ibb.co/WG8YP7M/Alerce-1.png" alt="Solvetic" class="btn_home" id="logo">
+      <div class="home_btns">
+        <a href="pantallacarrito.html"> <input type="button" class="icons8-notificacion"> </a>
+        <a href="pantallacarrito.html"> <input type="button" class="icons8-carrito"> </a>
+      </div>
+    </div>
     <p>
-  
-      Buscar: <input type="search" name="busquedamusica" placeholder="titulo,autor">
-  
-      <input type="submit" value="Buscar">
-  
+      <a href="resultados.html"> <input type="search" name="busqueda" placeholder="Buscar" class="busqueda_home menu_ocultar"> </a>
     </p>
-  
-  </form>
+    <br>
+    <div class="ism-slider" id="my-slider">
+      <ol>
+        <li onclick="seleccionarProducto(3)" class="cursor_point">
+
+            <img  src="https://eventosenagenda.com/wp-content/uploads/2021/10/DSC01728.png">
+
+
+          <div   onclick="seleccionarProducto(3)" class="ism-caption ism-caption-0">Cuentos macabros</div>
+
+        </li>
+        <li  onclick="seleccionarProducto(2)" class="cursor_point">
+          <img src="https://i.pinimg.com/originals/58/77/1f/58771f55439c7eb26e7f8a9b1c4b16a4.jpg">
+          <div  onclick="seleccionarProducto(2)" class="ism-caption ism-caption-0">Saga: Cazadores de sombras</div>
+        </li>
+        <li  onclick="seleccionarProducto(5)" class="cursor_point">
+
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/54db2efce4b0486db50f5c9f/1585227878559-JSSICAP1CYJUUSZ57LIU/Siddhartha-Header.jpg?format=2500w">
+          <div onclick="seleccionarProducto(5)" class="ism-caption ism-caption-0">Siddhartha </div>
+        </li>
+      </ol>
+    </div>
+
+    <br>
+
+<div class="grid_productos">
+
+  <div class="producto_holder">
+    <input type="button" class="boton_producto" id="producto1" onclick="seleccionarProducto(0)">
+    <div>
+      <a href="pantallaproducto.html"> <input type="button" class="text_box" value="Satanás"
+          onclick="seleccionarProducto(0)"> </a>
+    </div>
+  </div>
+  <div class="producto_holder">
+    <a href="pantallaproducto.html"> <input type="button" class="boton_producto" id="producto2"
+        onclick="seleccionarProducto(1)"> </a>
+    <div>
+      <a href="pantallaproducto.html"> <input type="button" class="text_box" value="El psicoanalista"
+          onclick="seleccionarProducto(1)"> </a>
+
+    </div>
+
+  </div>
+  <div class="producto_holder">
+    <a href="pantallaproducto.html"> <input type="button" class="boton_producto" id="producto3"
+        onclick="seleccionarProducto(2)"> </a>
+    <div>
+      <a href="pantallaproducto.html"> <input type="button" class="text_box" value="Ciudad de hueso"
+          onclick="seleccionarProducto(2)"> </a>
+
+    </div>
+
+  </div>
+  <div class="producto_holder">
+    <a href="pantallaproducto.html"> <input type="button" class="boton_producto" id="producto4"
+        onclick="seleccionarProducto(3)"> </a>
+    <div>
+      <a href="pantallaproducto.html"> <input type="button" class="text_box" value="Cuentos Macabros"
+          onclick="seleccionarProducto(3)"> </a>
+
+    </div>
+
+  </div>
+  <div class="producto_holder">
+    <a href="pantallaproducto.html"> <input type="button" class="boton_producto" id="producto5"
+        onclick="seleccionarProducto(4)"> </a>
+    <div>
+      <a href="pantallaproducto.html"> <input type="button" class="text_box" value="Al final mueren los dos"
+          onclick="seleccionarProducto(4)"> </a>
+
+    </div>
+
+  </div>
+
+  <div class="producto_holder">
+    <a href="pantallaproducto.html"> <input type="button" class="boton_producto" id="producto6"
+        onclick="seleccionarProducto(5)"> </a>
+    <div>
+      <a href="pantallaproducto.html"> <input type="button" class="text_box" value="Siddhartha"
+          onclick="seleccionarProducto(5)"> </a>
+
+    </div>
+
+  </div>
+  <div class="producto_holder">
+    <a href="pantallaproducto.html"> <input type="button" class="boton_producto" id="producto7"
+        onclick="seleccionarProducto(6)"> </a>
+    <div>
+      <a href="pantallaproducto.html"> <input type="button" class="text_box" value="Locura de Nuestro Tiempo"
+          onclick="seleccionarProducto(6)"> </a>
+
+    </div>
+
+  </div>
+  <div class="producto_holder">
+    <a href="pantallaproducto.html"> <input type="button" class="boton_producto" id="producto8"
+        onclick="seleccionarProducto(7)"> </a>
+    <div>
+      <a href="pantallaproducto.html"> <input type="button" class="text_box" value="Melancolía de los Feos"
+          onclick="seleccionarProducto(7)"> </a>
+
+    </div>
+
+  </div>
+</div>
+
+  </div>
+
+  <div class="menu menu_ocultar">
+
+    <div class="menu_bar">
+      <a href="home.html"> <input type="button" class="icons8-home"></a>
+      <a href="pantallacompras.html"> <input type="button" class="icons8-compras"></a>
+      <a href="pantallaventas.html"> <input type="button" class="icons8-ventas"></a>
+      <a href="favoritos.html"> <input type="button" class="icons8-favoritos"></a>
+      <a href="perfil.html"> <input type="button" class="icons8-perfil"></a>
+
+    </div>
+
+  </div>
+
 </body>
+
 </html>
